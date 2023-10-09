@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trello</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
     <h1>
-        Meu Trello
+        MiTrello
     </h1>
+</header>
+<main> 
+    <form id="adicionar-tarefa">
+      
+        <input type="text" id="nova-tarefa" name="nova-tarefa" placeholder="Nova tarefa">
+        <button type="submit">
+            Adicionar
+        </button>
+    </form>
+    <div class="tudo">
     <div class="coluna" id="fazer">
         <h2>
             A Fazer
@@ -27,14 +39,11 @@
         </h2>
         <ul class="tarefas" id="tarefas-feito"></ul>
     </div>
-    <form id="adicionar-tarefa">
-        <label for="nova-tarefa">Nova tarefa:</label>
-        <input type="text" id="nova-tarefa" name="nova-tarefa">
-        <button type="submit">
-            Adicionar
-        </button>
-    </form>
-
+   </div>
+</main>
+<footer>
+    <p>@Copyright of MiTrello</p>
+</footer>
     <script src="main.js"></script>
 </body>
 </html>
